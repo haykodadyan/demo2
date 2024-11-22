@@ -4,25 +4,45 @@
       "Statement": [
         {
           "Action": [
-            "logs:CreateLogGroup",
-            "logs:CreateLogStream",
-            "logs:PutLogEvents",
-            "dynamodb:GetItem",
-            "dynamodb:Query",
-            "dynamodb:PutItem",
-            "dynamodb:Batch*",
-            "dynamodb:DeleteItem",
-            "ssm:PutParameter",
-            "ssm:GetParameter",
-            "kms:Decrypt"
+            "lambda:InvokeFunctionUrl",
+            "lambda:UpdateFunctionUrlConfig",
+            "lambda:DeleteFunction",
+            "lambda:AddPermission"
           ],
           "Effect": "Allow",
-          "Resource": "*"
+          "Resource": "*",
+          "Condition": {
+            "StringNotEquals": {
+              "lambda:FunctionUrlAuthType": "NONE"
+            }
+          }
         }
       ],
       "Version": "2012-10-17"
     },
     "resource_type": "iam_policy",
+    "tags": {}
+  },
+  "demo-api": {
+    "resource_type": "api_gateway",
+    "deploy_stage": "api",
+    "dependencies": [],
+    "resources": {
+      "/hello": {
+        "enable_cors": false,
+        "GET": {
+          "authorization_type": "NONE",
+          "integration_type": "mock",
+          "api_key_required": false,
+          "method_request_parameters": {},
+          "integration_request_body_template": {},
+          "responses": [],
+          "integration_responses": [],
+          "default_error_pattern": true
+        }
+      }
+    },
+    "minimum_compression_size": 0,
     "tags": {}
   }
 }

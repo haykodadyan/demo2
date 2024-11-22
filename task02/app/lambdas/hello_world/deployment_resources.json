@@ -6,6 +6,28 @@
       "lambda-basic-execution"
     ],
     "resource_type": "iam_role",
-    "tags": {}
+    "tags": {},
+    "demo-api": {
+      "resource_type": "api_gateway",
+      "deploy_stage": "dev",
+      "dependencies": [],
+      "resources": {
+        "/hello": {
+          "enable_cors": false,
+          "GET": {
+            "authorization_type": "NONE",
+            "integration_type": "mock",
+            "api_key_required": false,
+            "method_request_parameters": {},
+            "integration_request_body_template": {},
+            "responses": [],
+            "integration_responses": [],
+            "default_error_pattern": true
+          }
+        }
+      },
+      "minimum_compression_size": 0,
+      "tags": {}
+    }
   }
 }
