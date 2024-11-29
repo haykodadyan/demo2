@@ -1,0 +1,55 @@
+{
+  "lambda-basic-execution": {
+    "policy_content": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Action": "lambda:InvokeFunction",
+          "Resource": "*"
+        }
+      ],
+      "Version": "2012-10-17"
+    },
+    "resource_type": "iam_policy",
+    "tags": {}
+  },
+  "task3_api": {
+    "resource_type": "api_gateway",
+    "deploy_stage": "api",
+    "dependencies": [],
+    "resources": {
+      "/": {
+        "enable_cors": false,
+        "GET": {
+          "authorization_type": "NONE",
+          "integration_type": "lambda",
+          "api_key_required": false,
+          "enable_proxy": true,
+          "lambda_name": "hello_world",
+          "method_request_parameters": {},
+          "integration_request_body_template": {},
+          "responses": [],
+          "integration_responses": [],
+          "default_error_pattern": true
+        }
+      },
+      "/hello": {
+        "enable_cors": false,
+        "GET": {
+          "authorization_type": "NONE",
+          "integration_type": "lambda",
+          "api_key_required": false,
+          "enable_proxy": true,
+          "lambda_name": "hello_world",
+          "method_request_parameters": {},
+          "integration_request_body_template": {},
+          "responses": [],
+          "integration_responses": [],
+          "default_error_pattern": true
+        }
+      }
+    },
+    "minimum_compression_size": 0,
+    "tags": {}
+  }
+}
