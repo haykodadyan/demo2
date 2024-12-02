@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require('uuid');
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
 
 exports.handler = async (event) => {
-    const auditTableName = 'cmtr-3a45b4b0-Audit-test';
+    const auditTableName = 'cmtr-99c81425-Audit-test';
     try {
         const auditEntries = [];
 
