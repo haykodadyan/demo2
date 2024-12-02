@@ -3,26 +3,22 @@ const { v4: uuidv4 } = require('uuid');
 const s3 = new AWS.S3();
 
 exports.handler = async (event) => {
-    // cmtr-3a45b4b0-uuid-storage-test
-    const bucketName = 'cmtr-3a45b4b0-uuid-storage-test'; // Specify your bucket name
+
+    const bucketName = 'cmtr-99c81425-uuid-storage-test';
 
     try {
-        // Generate 10 random UUIDs
+
         const uuids = Array.from({ length: 10 }, () => uuidv4());
 
-        // Prepare the content as a JSON string
         const fileContent = JSON.stringify({
             ids: uuids
         });
 
-        // Get current ISO time for the file name
         const startTime = new Date();
-        const isoString = startTime.toISOString().replace('Z', ''); // Remove 'Z' for microseconds
-        const start = isoString.split('T')[0] + 'T'; // Date part in YYYY-MM-DDTHH
-        const fileName = `${start}${startTime.getMilliseconds().toString().padStart(3, '0')}000Z.json`;  // Dynamic filename with milliseconds
+        const isoString = startTime.toISOString().replace('Z', '');
+        const start = isoString.split('T')[0] + 'T';
+        const fileName = `${start}${startTime.getMilliseconds().toString().padStart(3, '0')}000Z.json`;
 
-
-        // Set up parameters for S3 upload
         const params = {
             Bucket: bucketName,
             Key: fileName,
@@ -30,7 +26,6 @@ exports.handler = async (event) => {
             ContentType: 'application/json'
         };
 
-        // Upload the file to S3
         const data = await s3.upload(params).promise();
         console.log(`File uploaded successfully at ${data.Location}`);
 
