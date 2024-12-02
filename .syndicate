@@ -5,6 +5,23 @@ lambdas:
   task02:
     runtime: nodejs
 events:
+- operation: assemble
+  initiator: hayk_dadyan
+  bundle_name: demo2_241202.203130
+  time_start: '2024-12-02T20:31:31Z'
+  time_end: '2024-12-02T20:31:31Z'
+  duration_sec: 0.017
+- operation: assemble_node
+  initiator: hayk_dadyan
+  bundle_name: demo2_241202.203130
+  time_start: '2024-12-02T20:31:31Z'
+  time_end: '2024-12-02T20:31:31Z'
+  duration_sec: 0.002
+- operation: test
+  initiator: hayk_dadyan
+  time_start: '2024-12-02T20:31:31Z'
+  time_end: '2024-12-02T20:31:31Z'
+  duration_sec: 0.002
 - operation: build
   initiator: hayk_dadyan
   bundle_name: demo2_241122.012102
