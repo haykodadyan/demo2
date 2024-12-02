@@ -4,7 +4,7 @@
   "func_name": "SimpleLambdaFunction::SimpleLambdaFunction.Function::FunctionHandler",
   "resource_type": "lambda",
   "iam_role_name": "api_handler-role",
-  "runtime": "dotnet8",
+  "runtime": "nodejs",
   "memory": 128,
   "timeout": 100,
   "lambda_path": "lambdas\\api_handler",
