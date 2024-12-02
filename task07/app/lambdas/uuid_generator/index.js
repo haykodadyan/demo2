@@ -17,7 +17,7 @@ exports.handler = async (event) => {
         const startTime = new Date();
         const isoString = startTime.toISOString().replace('Z', '');
         const start = isoString.split('T')[0] + 'T';
-        const fileName = `${start}${startTime.getMilliseconds().toString().padStart(3, '0')}000Z.json`;
+        const fileName = `${startTime.toISOString().replace('Z', '.000Z')}`;
 
         const params = {
             Bucket: bucketName,
