@@ -12,9 +12,16 @@
             "dynamodb:PutItem",
             "dynamodb:Batch*",
             "dynamodb:DeleteItem",
+            "dynamodb:Scan",
+            "dynamodb:UpdateItem",
+            "dynamodb:DescribeStream",
+            "dynamodb:GetRecords",
+            "dynamodb:GetShardIterator",
+            "dynamodb:ListStreams",
             "ssm:PutParameter",
             "ssm:GetParameter",
-            "kms:Decrypt"
+            "kms:Decrypt",
+            "lambda:InvokeFunction"
           ],
           "Effect": "Allow",
           "Resource": "*"

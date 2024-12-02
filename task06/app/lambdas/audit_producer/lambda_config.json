@@ -15,7 +15,7 @@
       "target_table": "Configuration",
       "batch_size": 123,
       "function_response_types": ["ReportBatchItemFailures"]
-  }
+    }
   ],
   "env_variables": {},
   "publish_version": true,
