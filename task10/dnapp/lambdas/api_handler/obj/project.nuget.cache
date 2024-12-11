@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "8FKm6tIqAYo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ACER\\Desktop\\MyDocuments\\0.Epam\\1.ProjectEducation\\Tasks\\OpenAPISpecificationDocumenting\\task10\\dnapp\\lambdas\\api_handler\\Function.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ACER\\.nuget\\packages\\amazon.lambda.apigatewayevents\\2.4.0\\amazon.lambda.apigatewayevents.2.4.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\amazon.lambda.core\\2.2.0\\amazon.lambda.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.2.0\\amazon.lambda.serialization.systemtextjson.2.2.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\awssdk.cognitoidentityprovider\\3.7.404.2\\awssdk.cognitoidentityprovider.3.7.404.2.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\awssdk.core\\3.7.400.59\\awssdk.core.3.7.400.59.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.404\\awssdk.dynamodbv2.3.7.404.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.diagnostics.netcore.client\\0.2.510501\\microsoft.diagnostics.netcore.client.0.2.510501.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.diagnostics.tracing.traceevent\\3.1.17\\microsoft.diagnostics.tracing.traceevent.3.1.17.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.reflection.metadata\\8.0.0\\system.reflection.metadata.8.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.reflection.typeextensions\\4.7.0\\system.reflection.typeextensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
