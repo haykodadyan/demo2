@@ -26,8 +26,16 @@ exports.handler = async (event) => {
             forecast: {
                 elevation: weatherData.elevation,
                 generationtime_ms: weatherData.generationtime_ms,
-                hourly: weatherData.hourly,
-                hourly_units: weatherData.hourly_units,
+                hourly: {
+                    temperature_2m: weatherData.hourly.temperature_2m,
+                    time: weatherData.hourly.time
+
+                },
+                hourly_units: {
+                    temperature_2m: weatherData.hourly_units.temperature_2m,
+                    time: weatherData.hourly_units.time
+
+                },
                 latitude: weatherData.latitude,
                 longitude: weatherData.longitude,
                 timezone: weatherData.timezone,
